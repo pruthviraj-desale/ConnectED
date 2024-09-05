@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectED</title>
+    <link rel="icon" href="media/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('media/college-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        #comp-name h4 {
+            margin: 0;
+        }
+
+        #nav-bar h4 {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        #nav-bar {
+            display: flex;
+        }
+
+        #prof h3 {
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 60px;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding-top: 20px;
+            color: white;
+            z-index: 9;
+        }
+
+        .sidebar h4 {
+            padding: 15px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .sidebar h4:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .content {
+            margin-left: 270px;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .alumni-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            grid-auto-rows: minmax(400px, auto);
+        }
+
+        .alumni-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            height: 100%;
+        }
+
+        .alumni-card img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        .alumni-card h3 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        .alumni-card p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .alumni-card .skills {
+            margin-top: 10px;
+        }
+
+        .alumni-card .skills span {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-right: 5px;
+            font-size: 0.9rem;
+        }
+
+        .alumni-card .company-branch,
+        .alumni-card .skills,
+        .alumni-card .bio {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="top-bar">
+        <div id="comp-name">
+            <h4>ConnectED</h4>
+        </div>
+        <div id="nav-bar">
+            <h4>Sponsor</h4>
+            <h4>Jobs and Internships</h4>
+            <h4>News & Events</h4>
+            <h4>Alumni Directory</h4>
+        </div>
+        <div id="prof">
+            <h3>Profile</h3>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <h4>Dashboard</h4>
+        <h4>Messages</h4>
+        <h4>Groups</h4>
+        <h4>Resources</h4>
+        <h4>Settings</h4>
+        <h4>Help</h4>
+        <h4>Logout</h4>
+    </div>
+
+    <div class="content">
+        <h2>Featured Alumni</h2>
+
+        <div class="alumni-grid">
+            <div class="alumni-card">
+                <img src="media/alumni1.jpg" alt="Alumni 1">
+                <h3>John Doe</h3>
+                <p class="company-branch">Google - Mountain View, CA</p>
+                <p class="bio">John is a seasoned software engineer with over 10 years of experience in developing scalable web applications.</p>
+                <div class="skills">
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                </div>
+            </div>
+
+            <div class="alumni-card">
+                <img src="media/alumni2.jpg" alt="Alumni 2">
+                <h3>Jane Smith</h3>
+                <p class="company-branch">Amazon - Seattle, WA</p>
+                <p class="bio">Jane specializes in product management with a focus on e-commerce platforms and user experience design.</p>
+                <div class="skills">
+                    <span>Product Management</span>
+                    <span>UX Design</span>
+                    <span>Agile</span>
+                </div>
+            </div>
+
+            <div class="alumni-card">
+                <img src="media/alumni3.jpg" alt="Alumni 3">
+                <h3>Michael Brown</h3>
+                <p class="company-branch">Facebook - Menlo Park, CA</p>
+                <p class="bio">Michael is a data scientist with a strong background in machine learning and big data analytics.</p>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>TensorFlow</span>
+                    <span>Big Data</span>
+                </div>
+            </div>
+
+            <div class="alumni-card">
+                <img src="media/alumni4.jpg" alt="Alumni 4">
+                <h3>Sarah Johnson</h3>
+                <p class="company-branch">Apple - Cupertino, CA</p>
+                <p class="bio">Sarah is a UX designer passionate about creating intuitive and aesthetically pleasing user interfaces.</p>
+                <div class="skills">
+                    <span>UX Design</span>
+                    <span>Sketch</span>
+                    <span>Prototyping</span>
+                </div>
+            </div>
+
+            <div class="alumni-card">
+                <img src="media/alumni5.jpg" alt="Alumni 5">
+                <h3>David Wilson</h3>
+                <p class="company-branch">Microsoft - Redmond, WA</p>
+                <p class="bio">David has a deep understanding of digital marketing strategies and customer engagement.</p>
+                <div class="skills">
+                    <span>Digital Marketing</span>
+                    <span>SEO</span>
+                    <span>Content Strategy</span>
+                </div>
+            </div>
+
+            <div class="alumni-card">
+                <img src="media/alumni6.jpg" alt="Alumni 6">
+                <h3>Emily Davis</h3>
+                <p class="company-branch">Tesla - Palo Alto, CA</p>
+                <p class="bio">Emily is a data analyst who excels in data visualization and predictive analytics.</p>
+                <div class="skills">
+                    <span>Data Analysis</span>
+                    <span>Power BI</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

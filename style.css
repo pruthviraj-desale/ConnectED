@@ -1,0 +1,33 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff1e6;
+}
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+#comp-name{
+    display: flex;
+    justify-content: flex-start;
+    font-family:"Roboto", sans-serif;
+    font-size: large;
+    letter-spacing: 0.3px;
+    margin-bottom: ;
+    
+}
+#nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 6rem;
+}
